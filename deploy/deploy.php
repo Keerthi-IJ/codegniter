@@ -11,15 +11,15 @@
 require 'recipe/codeigniter.php';
 
 // Your production server
-server('prod', 'your.server.example.com', 22)
-    ->user('username')
+server('prod', '49.207.212.130', 22)
+    ->user('Keerthi-IJ')
     ->forwardAgent()
     ->stage('production')
     ->env('branch', 'master')
-    ->env('deploy_path', '/var/www/your-codeigniter-app');
+    ->env('deploy_path', '/var/www/codegniter');
 
 // Your Git repository
-set('repository', 'git@github.com:org/your-codeigniter-app.git');
+set('repository', 'git@github.com:Keerthi-IJ/codegniter.git');
 
 //task('deploy:vendors-dev', function () {
 //    if (commandExist('composer')) {
